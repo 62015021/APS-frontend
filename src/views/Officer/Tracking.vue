@@ -35,7 +35,7 @@
                   :complete="listtracking.checktracking > 1"
                   step="1"
                   color="green"
-                   > Ad type </v-stepper-step>
+                   > ส่งเรื่อง </v-stepper-step>
 
                   <v-divider></v-divider>
 
@@ -43,7 +43,7 @@
                   :complete="listtracking.checktracking > 2"
                   step="2" 
                   color="green"
-                  > Ad style </v-stepper-step>
+                  > รับเรื่อง </v-stepper-step>
 
                   <v-divider></v-divider>
 
@@ -51,7 +51,7 @@
                   :complete="listtracking.checktracking > 3"
                   step="3"
                   color="green">
-                    Ad style
+                    หัวหน้างานรับเรื่อง
                   </v-stepper-step>
 
                   <v-divider></v-divider>
@@ -59,7 +59,7 @@
                   <v-stepper-step 
                   :complete="listtracking.checktracking > 4"
                   step="4"
-                  color="green"> Ad style </v-stepper-step>
+                  color="green"> ยื่นเคำร้องเสร็จสิ้น </v-stepper-step>
 
                   
                 </v-stepper-header>

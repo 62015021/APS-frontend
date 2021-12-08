@@ -2,13 +2,13 @@
   <!-- ส่วนจัดเเสดง -->
   <div id="DashboardSTU">
     <NavbarUser />
-    <v-card class="cardshow">
+    <v-card class="cardmargin">
       <h1>
         Dashboard
         <v-divider></v-divider>
       </h1>
-      <v-divider></v-divider>
-      <v-row>
+      
+      <v-row class="cardmargin">
         <v-col>
           <!-- รายงานเอกสารที่ทำไป -->
 

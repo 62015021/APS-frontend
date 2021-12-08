@@ -15,6 +15,7 @@
         :sort-by="sortBy.toLowerCase()"
         :sort-desc="sortDesc"
         hide-default-footer
+        class="cardmargin"
       >
         <template v-slot:header>
           <v-text-field
@@ -39,7 +40,7 @@
               <v-btn block height="200" router :to="item.route">
                 <v-row>
                   <v-col align="center">
-                    <v-btn color="secondary" width="100" height="100">
+                    <v-btn color="primary" width="100" height="100">
                       <v-icon>mdi-{{ item.icon }}</v-icon>
                     </v-btn>
                     
@@ -82,55 +83,55 @@ export default {
           detail:"ส่งความก้าวหน้าการทำโครงการ",
         },
         {
-          name: "Ice cream sandwich",
+          name: "คำร้องขอสอบย้อนหลัง",
           route: "/Sentpentition",
           icon: "file-document-outline",
           detail:"ส่งความก้าวหน้าการทำโครงการ",
         },
         {
-          name: "Eclair",
+          name: "คำร้องขอเลื่อนตำเเหน่ง",
           route: "/Sentpentition",
           icon: "file-document-outline",
           detail:"ส่งความก้าวหน้าการทำโครงการ",
         },
         {
-          name: "Cupcake",
+          name: "คำร้องลดหย่อนภาษี",
           route: "/Sentpentition",
           icon: "file-document-outline",
           detail:"ส่งความก้าวหน้าการทำโครงการ",
         },
         {
-          name: "Gingerbread",
+          name: "คำร้องขอเบิกเงินเดือน",
           route: "/Sentpentition",
           icon: "file-document-outline",
           detail:"ส่งความก้าวหน้าการทำโครงการ",
         },
         {
-          name: "Jelly bean",
+          name: "คำร้องลาพักร้อน",
           route: "/Sentpentition",
           icon: "file-document-outline",
           detail:"ส่งความก้าวหน้าการทำโครงการ",
         },
         {
-          name: "Lollipop",
+          name: "คำร้องขอลาออก",
           route: "/Sentpentition",
           icon: "file-document-outline",
           detail:"ส่งความก้าวหน้าการทำโครงการ",
         },
         {
-          name: "Honeycomb",
+          name: "คำร้องขอ ลาป่วย",
           route: "/Sentpentition",
           icon: "file-document-outline",
           detail:"ส่งความก้าวหน้าการทำโครงการ",
         },
         {
-          name: "Donut",
+          name: "คำร้องขอทำงานล่วงเวลา",
           route: "/Sentpentition",
           icon: "file-document-outline",
           detail:"ส่งความก้าวหน้าการทำโครงการ",
         },
         {
-          name: "KitKat",
+          name: "คำร้องขอลงทุ่น",
           route: "/Sentpentition",
           icon: "file-document-outline",
           detail:"ส่งความก้าวหน้าการทำโครงการ",
