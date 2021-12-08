@@ -37,7 +37,7 @@
               
               <!-- <v-divider></v-divider> -->
               <v-row  v-for="heard in heard" :key="heard">
-                กดที่ switch เพื่อเพิ่มข้อมูลเฉพาะ
+                กดที่ switch เพื่อเพิ่มข้อมูลเฉพาะf
 
               <v-switch
                 v-model="heard.hasSpecificsDetail"
