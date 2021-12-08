@@ -34,16 +34,20 @@
                 outlined
                 v-model="forms.title"
               ></v-text-field>
-              เลื่อนสวิตซ์ หากต้องการเก็บข้อมูลเฉพาะ
-              <v-switch
-                          inset
-                          v-model="heard.hasSpecificsDetail"
-                          
-                        ></v-switch>
-              {{heard.hasSpecificsDetail}}
+              
               <!-- <v-divider></v-divider> -->
-              <v-row v-if="heard.hasSpecificsDetail = heard.hasSpecificsDetail">
-                <v-col>
+              <v-row  v-for="heard in heard" :key="heard">
+                กดที่ switch เพื่อเพิ่มข้อมูลเฉพาะ
+
+              <v-switch
+                v-model="heard.hasSpecificsDetail"
+                
+                
+              ></v-switch>
+
+                <v-col
+                  v-if="(heard.hasSpecificsDetail = heard.hasSpecificsDetail)"
+                >
                   <h3>ชื่อข้อมูลเฉพาะ</h3>
                   <v-row v-for="(form, index) in forms" :key="index">
                     <v-col>
@@ -237,6 +241,7 @@ export default {
   data() {
     return {
       formName: "",
+      hasSpecificsDetail: null, //ตัวกำหนดว่าเป็นฟอรมต้องใส่รายละเอียดเพิ่ม
 
       e1: 1,
       forms: [],
